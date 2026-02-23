@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import logo from "@/assets/logo.png";
 
 const Login = () => {
   const [phone, setPhone] = useState("");
@@ -36,8 +37,8 @@ const Login = () => {
       <div className="w-full max-w-[300px] space-y-8">
         {/* Logo */}
         <div className="text-center space-y-2">
-          <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto">
-            <span className="text-primary-foreground font-extrabold text-2xl">DH</span>
+          <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto overflow-hidden">
+            <img src={logo} alt="DeemaHa Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-2xl font-bold text-foreground">DeemaHa</h1>
           <p className="text-sm text-muted-foreground">Debt Management</p>
