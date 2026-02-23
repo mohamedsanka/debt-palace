@@ -41,7 +41,7 @@ const Login = () => {
             <img src={logo} alt="DeemaHa Logo" className="w-full h-full object-cover" />
           </div>
           <h1 className="text-2xl font-bold text-foreground">DeemaHa</h1>
-          <p className="text-sm text-muted-foreground">Debt Management</p>
+          <p className="text-sm text-muted-foreground">Maamul deemaha sifudud</p>
         </div>
 
         {/* Form */}
@@ -77,7 +77,7 @@ const Login = () => {
 
         {/* Footer */}
         <p className="text-center text-xs text-muted-foreground">
-          wixi faah-faahin ah laxiriir 061234567
+          wixi faah-faahin ah laxiriir 0617872749
         </p>
       </div>
     </div>
