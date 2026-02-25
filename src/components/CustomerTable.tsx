@@ -128,10 +128,15 @@ const CustomerTable = ({ customers, searchQuery, mode, onPay, onDelete }: Custom
                       <td className="py-2 px-2 text-center">
                         {mode === "unpaid" && onPay && (
                           <button
-                            onClick={(e) => { e.stopPropagation(); onPay(debt.id); }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (window.confirm("Mahubtaa inaad saxdo?")) {
+                                onPay(debt.id);
+                              }
+                            }}
                             className="bg-success text-success-foreground text-xs px-3 py-1 rounded-md font-medium hover:opacity-90 transition-opacity"
                           >
-                            Pay
+                            Sax
                           </button>
                         )}
                         {mode === "paid" && onDelete && (

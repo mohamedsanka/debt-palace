@@ -65,13 +65,17 @@ const Dashboard = () => {
             onChange={(e) => setCustomerName(e.target.value)}
             className="w-full px-4 py-3 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             required
+            spellCheck={false}
+            autoComplete="off"
           />
           <input
             type="tel"
-            placeholder="Phone"
+            placeholder="Taleefanka"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full px-4 py-3 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            spellCheck={false}
+            autoComplete="off"
           />
           <input
             type="number"
@@ -82,6 +86,7 @@ const Dashboard = () => {
             required
             min="0.01"
             step="0.01"
+            spellCheck={false}
           />
           <div className="flex gap-3">
             <input
