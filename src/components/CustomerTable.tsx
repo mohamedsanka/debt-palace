@@ -71,7 +71,7 @@ const CustomerTable = ({ customers, searchQuery, mode, onPay, onDelete }: Custom
             <th className="text-right py-3 px-2 font-medium">Total</th>
             <th className="text-left py-3 px-2 font-medium">Phone</th>
             {mode !== "reminder" && <th className="text-center py-3 px-2 font-medium">Action</th>}
-            {mode === "reminder" && <th className="text-center py-3 px-2 font-medium">Xaalka</th>}
+            {mode === "reminder" && <th className="text-center py-3 px-2 font-medium">Balanta</th>}
           </tr>
         </thead>
         <tbody>
