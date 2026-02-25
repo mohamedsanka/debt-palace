@@ -23,12 +23,12 @@ const Login = () => {
     setLoading(false);
 
     if (error || !data) {
-      alert("Invalid credentials");
+      alert("Isku hubi numbarka ama pinka");
       return;
     }
 
     localStorage.setItem("deemaha_owner", JSON.stringify(data));
-    alert(`Welcome ${data.name}`);
+    alert(`Soo dhawoow ${data.name}`);
     navigate("/dashboard");
   };
 
