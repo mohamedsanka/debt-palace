@@ -40,7 +40,7 @@ const Login = () => {
           <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto overflow-hidden">
             <img src={logo} alt="DeemaHa Logo" className="w-full h-full object-cover" />
           </div>
-          <h1 className="text-2xl font-bold text-foreground">DeemaHa</h1>
+          <h1 className="text-2xl font-bold text-foreground">DeemaHa App</h1>
           <p className="text-sm text-muted-foreground">Maamul deemaha sifudud</p>
         </div>
 
