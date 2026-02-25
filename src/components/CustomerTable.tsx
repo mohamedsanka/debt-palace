@@ -52,9 +52,9 @@ const CustomerTable = ({ customers, searchQuery, mode, onPay, onDelete }: Custom
   const getStatusLabel = (debt: Debt) => {
     const today = new Date().toISOString().split("T")[0];
     const debtDate = debt.date;
-    if (debtDate < today) return "Overdue";
-    if (debtDate === today) return "Today";
-    return "Upcoming";
+    if (debtDate < today) return "Mar hore";
+    if (debtDate === today) return "Maanta";
+    return "Wali";
   };
 
   if (filtered.length === 0) {
@@ -67,11 +67,11 @@ const CustomerTable = ({ customers, searchQuery, mode, onPay, onDelete }: Custom
         <thead>
           <tr className="border-b border-border text-muted-foreground">
             <th className="text-left py-3 px-2 font-medium">#</th>
-            <th className="text-left py-3 px-2 font-medium">Name</th>
+            <th className="text-left py-3 px-2 font-medium">Magaca</th>
             <th className="text-right py-3 px-2 font-medium">Total</th>
             <th className="text-left py-3 px-2 font-medium">Phone</th>
             {mode !== "reminder" && <th className="text-center py-3 px-2 font-medium">Action</th>}
-            {mode === "reminder" && <th className="text-center py-3 px-2 font-medium">Status</th>}
+            {mode === "reminder" && <th className="text-center py-3 px-2 font-medium">Xaalka</th>}
           </tr>
         </thead>
         <tbody>
