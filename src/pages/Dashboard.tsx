@@ -55,7 +55,7 @@ const Dashboard = () => {
       <TopBar />
 
       <main className="px-4 py-6 max-w-md mx-auto">
-        <h2 className="text-lg font-bold text-foreground mb-4">Register New Debt</h2>
+        <h2 className="text-lg font-bold text-foreground mb-4">Diiwaangeli Deyn Cusub</h2>
 
         <form onSubmit={handleRegister} className="space-y-3">
           <input
@@ -104,7 +104,7 @@ const Dashboard = () => {
             disabled={loading}
             className="w-full py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity disabled:opacity-50"
           >
-            {loading ? "Registering..." : "Register Debt"}
+            {loading ? "Diiwaangelinaya..." : "Diiwaangeli"}
           </button>
         </form>
       </main>
