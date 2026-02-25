@@ -1,5 +1,5 @@
-const CACHE_NAME = 'deemaha-v1';
-const urlsToCache = ['/', '/favicon.png'];
+const CACHE_NAME = 'deemaha-v2';
+const urlsToCache = ['/', '/favicon.png', '/offline.html'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -18,7 +18,13 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    fetch(event.request).catch(() => caches.match(event.request))
-  );
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match('/offline.html'))
+    );
+  } else {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request))
+    );
+  }
 });
