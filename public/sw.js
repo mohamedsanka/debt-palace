@@ -20,7 +20,12 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith(
-      fetch(event.request).catch(() => caches.match('/offline.html'))
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) return response;
+          return caches.match('/') || caches.match('/offline.html') || response;
+        })
+        .catch(() => caches.match('/offline.html'))
     );
   } else {
     event.respondWith(
