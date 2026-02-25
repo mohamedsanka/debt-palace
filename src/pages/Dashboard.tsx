@@ -44,7 +44,7 @@ const Dashboard = () => {
       return;
     }
 
-    alert("Debt registered successfully!");
+    alert("Waala diiwaangeliyay mahadsanid!");
     setCustomerName("");
     setPhone("");
     setAmount("");
