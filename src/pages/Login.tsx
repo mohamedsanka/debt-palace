@@ -23,7 +23,7 @@ const Login = () => {
     setLoading(false);
 
     if (error || !data) {
-      alert("Isku hubi numbarka ama pinka");
+      alert("Iska hubi numbarka ama pinka");
       return;
     }
 
