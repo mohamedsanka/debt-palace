@@ -75,7 +75,7 @@ const Unpaid = () => {
       <main className="px-4 py-4 max-w-lg mx-auto">
         <input
           type="text"
-          placeholder="Search by name or phone..."
+          placeholder="Kuraadi magaca ama taleefanka..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full px-4 py-3 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring mb-4"

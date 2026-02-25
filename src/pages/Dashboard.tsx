@@ -60,7 +60,7 @@ const Dashboard = () => {
         <form onSubmit={handleRegister} className="space-y-3">
           <input
             type="text"
-            placeholder="Customer Name"
+            placeholder="Magaca"
             value={customerName}
             onChange={(e) => setCustomerName(e.target.value)}
             className="w-full px-4 py-3 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
@@ -75,7 +75,7 @@ const Dashboard = () => {
           />
           <input
             type="number"
-            placeholder="Amount"
+            placeholder="Lacagta"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             className="w-full px-4 py-3 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
