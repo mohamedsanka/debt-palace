@@ -2,7 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
   {
-    label: "Dashboard",
+    label: "Diiwaan",
     path: "/dashboard",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -11,7 +11,7 @@ const navItems = [
     ),
   },
   {
-    label: "Unpaid",
+    label: "Aan bixin",
     path: "/unpaid",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -20,7 +20,7 @@ const navItems = [
     ),
   },
   {
-    label: "Paid",
+    label: "Bixiyay",
     path: "/paid",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -29,7 +29,7 @@ const navItems = [
     ),
   },
   {
-    label: "Reminder",
+    label: "Xasuusin",
     path: "/reminder",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
