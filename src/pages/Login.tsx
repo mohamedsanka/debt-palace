@@ -77,7 +77,7 @@ const Login = () => {
 
         {/* Footer */}
         <p className="text-center text-xs text-muted-foreground">
-          wixi faah-faahin ah laxiriir 0617872749
+          Wixii faah-faahin ah laxiriir <span className="font-bold">0617872749</span>
         </p>
       </div>
     </div>
